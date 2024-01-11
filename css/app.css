@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 0.5em;
+}
+.nav-menu a {
+  display: inline-block;
+  text-transform: capitalize;
+  padding: 1em;
+  transform: translateX(var(--x, 0)) translateY(var(--y, 0));
+  transition: 300ms;
+  will-change: transform;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  outline-offset: 0.5em;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: auto;
+  gap: 1em;
+  border-radius: 21em;
+  border: 2px solid wheat;
+  padding: 0.5em;
+}
+.header .logo {
+  height: 2em;
+  width: 2em;
+  background-color: blue;
+  border-radius: inherit;
+  display: inline-grid;
+  place-items: center;
+}
+.header .nav-wrapper {
+  position: relative;
+  height: 2em;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.header .nav-wrapper .mini-nav,
+.header .nav-wrapper .nav {
+  height: 2em;
+  align-items: center;
+  display: flex;
+  padding: 0.8em;
+  transition: 300ms;
+}
+.header .nav-wrapper .mini-nav {
+  background: red;
+  width: -moz-max-content;
+  width: max-content;
+  padding-inline: 2em;
+  border-radius: 1em;
+}
+.header .nav-wrapper .nav {
+  white-space: nowrap;
+  position: relative;
+  bottom: 100%;
+  position: relative;
+  margin: auto;
+}
+
+section {
+  padding: 1em;
+  height: 100vh;
+  border: 2px solid white;
+  margin-top: 2em;
+  text-align: center;
+  font-size: 2em;
+}/*# sourceMappingURL=app.css.map */
